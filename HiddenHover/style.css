@@ -1,0 +1,257 @@
+body {
+    background-color: bisque;
+}
+
+.container {
+    display: flex;
+    /* border: 10px black; */
+    height: 70vh;
+    margin: 100px 0;
+    /* justify-content: center; */
+}
+
+p {
+    color: rgb(251, 191, 166);
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.box {
+    /* border: black; */
+    background-color: rgb(159, 228, 250);
+    flex-basis: 30000px;
+
+}
+
+.box:hover {
+    background-color: rgb(251, 191, 166);
+}
+
+:root {
+    --ajustes: 300px;
+}
+
+div:hover:nth-child(2)::before {
+    content: "T";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(3)::before {
+    content: "h";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(4)::before {
+    content: "i";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(5)::before {
+    content: "s";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(6)::before {
+    content: " ";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(7)::before {
+    content: "i";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(8)::before {
+    content: "s";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(9)::before {
+    content: " ";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(10)::before {
+    content: "a";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(11)::before {
+    content: " ";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(12)::before {
+    content: "H";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(13)::before {
+    content: "o";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(14)::before {
+    content: "v";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(15)::before {
+    content: "e";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(16)::before {
+    content: "r";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(17)::before {
+    content: " ";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(18)::before {
+    content: "S";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(19)::before {
+    content: "u";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(20)::before {
+    content: "r";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(21)::before {
+    content: "p";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(22)::before {
+    content: "r";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(23)::before {
+    content: "i";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(24)::before {
+    content: "s";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(25)::before {
+    content: "e";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+div:hover:nth-child(26)::before {
+    content: " ";
+    color: bisque;
+    font-size: var(--ajustes);
+    margin: 200px 0;
+    display: flex;
+    justify-content: center;
+}
