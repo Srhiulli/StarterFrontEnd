@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+    }
+
+    .button-location {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .glowing-style {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6em 1em;
+
+
+      box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.26);
+
+      border: none;
+      border-radius: 10px;
+
+      height: 150px;
+      width: 250px;
+      
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(0, 0, 0);
+      
+      cursor: pointer;
+      position: relative;
+
+      user-select: none;
+      z-index: 0;
+      touch-action: manipulation;
+      -webkit-user-select: none;
+    }
+    
+.glowing-style:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #fbc4c4,
+    #f6d3b7,
+    #fbfbd6,
+    #d0f4c2,
+    #00ffd5,
+    #bfc9f9,
+    #dec9f5,
+    #f3b0e4,
+    #f6bcbc,
+    #fbfbd6,
+    #fae8c0
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 300em;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-style 20s linear infinite;
+  transition: opacity 1s ease-in-out;
+  border-radius: 10px;
+  border: none;
+
+}
+
+@keyframes glowing-style {
+  0% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 5%;
+  }
+}
+
+.button-style:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fffdfd;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  border: none;
+
+}
+    
+    .invisible {
+      display: none !important;
+    }
+
+    .bcColorVisible {
+
+      position: absolute;
+      z-index: 99;
+
+      box-shadow: 10px 10px 100px 5px rgba(0, 0, 0, 0.26);
+
+      background-color: rgb(255, 255, 255);
+      animation: glowing-style 20s linear infinite;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .modal-login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 13px;
+
+      background-color: antiquewhite;
+
+      padding: 35px 15px;
+      height: 80%;
+      width: 50%;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+      background-color: whitesmoke;
+
+      box-shadow: 1px 20px 800px 10px rgba(0, 0, 0, 0.26);
+      border: none;
+      border-radius: 15px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .title {
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .input {
+      border-radius: 13px;
+      border: 1px solid black;
+      box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.26);
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="button-location">
+    <button id="openModal" class="glowing-style" role="button">Click to open the modal</button>
+  </div>
+
+  <div class="modal-login invisible bcColorVisible glowing-style">
+    <fieldset class="form-group">
+      
+      <legend class="title">About you:</legend>
+      <label class="title" for="name"> Tell me your name:</label>
+      <input class="input" type="text" autocomplete="name" autofocus id="name" name="quantity" min="0" max="20"
+      placeholder="name">
+      
+      <label class="title" for="email"> Email:</label>
+      <input class="input" type="email" autofocus id="email" name="text" min="7" max="40" placeholder="Email" required
+        title="exemple@exemple.com">
+
+      <label class="title" for="age"> Age:</label>
+      <input class="input" type="age" autofocus id="age" name="number" min="1" max="3" placeholder="00" required
+        title="00">
+        
+        <label class="title" for=""> Phone:</label>
+        <input class="input" type="phone" autofocus id="phone" name="number" min="10" max="11"
+        placeholder="(00)00000-0000" required title="(00)00000-0000">
+        <label>press ESC to close the modal</label>
+      </fieldset>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
