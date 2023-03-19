@@ -1,0 +1,62 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    background-color: beige;
+}
+
+.header-button-catalog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 60px;
+    width: 80vw;
+
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.button-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+
+    flex-wrap: wrap;
+    gap: 2em;
+
+    height: 80vw;
+    width: calc(80vw - 20px);
+    padding: 20px;
+
+    overflow-y:scroll; 
+    scroll-behavior: smooth;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+
+    border: 1px solid beige;
+    border-radius: 10px;
+    box-shadow: 300px 300px 300px 300px rgb(193, 189, 175);
+    padding: 2px;
+    cursor: pointer;
+
+    
+    width: calc(32% - 200px);
+    aspect-ratio: 1/1;
+    max-height: 504px;
+    max-width: 504px;
+    min-height: 100px;
+    min-width: 100px;
+
+}
+.box:hover{
+    scale: 2 2;
+    transition: all 1s ease-out;
+    transition-delay: 1s;   
+}

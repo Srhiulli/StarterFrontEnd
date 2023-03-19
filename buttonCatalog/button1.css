@@ -1,0 +1,90 @@
+
+/* <html>
+<button class="button1">Button name</button> 
+</html>
+*/
+.button1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6em 1em;
+
+
+  box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.26);
+
+  border: none;
+  border-radius: 10px;
+
+  height: 80%;
+  width: 100%;
+
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+
+  cursor: pointer;
+  position: relative;
+
+  user-select: none;
+  z-index: 0;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+}
+
+.button1:before {
+  content: "button 1";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fcfc05,
+      #4aff03,
+      #00ffd5,
+      #002aff,
+      #7900fb,
+      #ff00c8,
+      #ff0000,
+      #ffff00,
+      #ffae00);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 300em;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: button1 20s linear infinite;
+  transition: opacity 1s ease-in-out;
+  border-radius: 10px;
+  border: none;
+
+}
+
+@keyframes button1 {
+  0% {
+    background-position: 50% 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 5%;
+  }
+}
+
+.button1:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #14141360;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  border: none;
+
+}
