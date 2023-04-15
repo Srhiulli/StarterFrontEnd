@@ -1,0 +1,37 @@
+.button3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    height: 45%;
+    width: 95%;
+
+
+    background-color: #2e2e2e;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    
+
+
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+
+  }
+  
+  .button3:hover {
+  background: linear-gradient(80deg, #8a8a8a, #b8b8b8, #a7a7a8, #8b8b8b );
+  color: rgb(107, 106, 106);
+  border: 1px solid rgb(148, 147, 147);
+  }
