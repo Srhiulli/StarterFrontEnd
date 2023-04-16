@@ -1,3 +1,8 @@
+
+/* <html>
+<button class="button2">Button name</button> 
+</html>
+*/
 .button2 {
     display: flex;
     align-items: center;
