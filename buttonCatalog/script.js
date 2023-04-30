@@ -33,3 +33,4 @@ function copyFileContent(htmlitem) {
         .then(_parseCSS)
         .then(_clipboardCopy)
 }
+
