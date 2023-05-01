@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> My first HTML & CSS form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body class="animated-background">
+    <form class="shake-background" action="" method="post" enctype="multipart/form-data" id="myfirstform">
+        <!-- <form file precisa de enctype="multipart/form-data"> -->
+
+        <fieldset>
+            <fieldset class="form-group">
+                <legend>About you</legend><br>
+                <label for="name"> Tell me your name:</label><br>
+                <input type="text" autocomplete="name" autofocus id="name" name="quantity" min="0" max="20"
+                    placeholder="name">
+                <label for="email"> email:</label><br>
+                <input type="email" autofocus id="email" name="text" min="7" max="40" placeholder="Email" required
+                    title="exemple@exemple.com">
+                <label for="age">How old are you?</label><br>
+                <input type="number" autocomplete="age" autofocus id="age" name="quantity" min="1" max="3"
+                    inputmode="numeric" placeholder="age">
+                <label for="country"> Tell the country you live in:</label><br>
+                <input type="text" autocomplete="country" autofocus id="country" name="country" placeholder="country">
+            </fieldset>
+            <fieldset>
+                <label for="date"> Today is:</label><br>
+                <input type="date" autofocus id="date" name="date">
+            </fieldset><br>
+            <fieldset>
+                <legend>Your likes</legend><br>
+                <label for="happiness"> in 1 to 10, how happy are you today?</label><br>
+                <input type="range" min="01" max="10" id="happiness" step="1">
+                <label for="color"> Put your favorite color here:</label><br>
+                <input type="color" autofocus id="color" name="color">
+                <label for="fruit"> what is your favorite fruit?:</label><br>
+                <input type="text" autofocus list="fruitdata" id="fruit" name="fruit">
+                <label>Choose your interests</label><br>
+                <div>
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" autofocus id="coding" name="interests" value="coding">
+                </div>
+                <div>
+                    <label for="read">Read</label>
+                    <input type="checkbox" id="read" name="interests" value="read">
+                </div>
+                <div>
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                </div>
+                <div>
+                    <label for="animals">Animals</label>
+                    <input type="checkbox" id="animals" name="interests" value="animals">
+                </div>
+            </fieldset>
+            <datalist id="fruitdata">
+                <option>apple</option>
+                <option>banana</option>
+                <option>watermelow</option>
+                <option>strowberry</option>
+                <option>orange</option>
+                <option>mango</option>
+                <option>cherry</option>
+            </datalist>
+            <fieldset class="form-group">
+                <label for="file"> Submit a photo:</label><br>
+                <input type="file" multiple autofocus id="file" accept="image/*" name="image">
+            </fieldset><br>
+            <fieldset class="form-group">
+                <legend>Rate this form</legend><br>
+                <label>Do you like this form? :)</label><br>
+                <label for="yep"> Yeeahh</label>
+                <input type="radio" checked id="yep" name="formreview" value="yep">
+                <label for="no"> Sorry, but no</label>
+                <input type="radio" id="no" name="formreview" value="no"><br>
+                <label for="review">Give a review to this form</label>
+                <textarea name="review" autofocus cols="95" rows="10" maxlength="100"
+                    title="Please, be nice "></textarea>
+            </fieldset><br><br>
+            <input type="hidden" id="timestamp" name="timestamp" value="timestamp">
+            <div class="form-group">
+                <button type="submit" form="myfirstform">Submit</button><br>
+                <button type="reset">Reset</button>
+
+            </div>
+
+    </form>
+</body>
+
+</html>
